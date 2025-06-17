@@ -3,7 +3,7 @@
 // Desafio Batalha Naval - MateCheck
 
 int main() {
-    // Nível Novato - Posicionamento dos Navios
+    
     // Define o tamanho dos tabuleiros e dos Navios
     int tabuleiro[10][10];
     int linhas = 10;
@@ -17,14 +17,22 @@ int main() {
         }
     }
 
-    //Define a posição do Navio (coluna 2, linha 3 a 5)
-    for(j = 3; j <= 5; j++){
+    //Define a posição do Navio (coluna 2, linha 1 a 3)
+    for(j = 1; j <= 3; j++){
         tabuleiro[2][j] = 3;
     }
 
-    //Define a posição do segundo navio vertical (coluna 7, linha 5 a 7)
-    for(i = 3; i < 6; i++){
-        tabuleiro[i][7] = 3;
+    //Define a posição do segundo navio vertical (coluna 5, linha 4 a 7)
+    for(i = 4; i < 7; i++){
+        tabuleiro[i][5] = 3;
+    }
+
+    //Define a posição do terceiro e quarto navio diagonal 
+    for(i = 6; i < 9; i++){
+        tabuleiro[i][i - 5] = 3;
+    }
+    for(i = 1; i <= 3; i++){
+        tabuleiro[i][i + 5] = 3;
     }
 
     //Exibe o tabuleiro com coordenadas A-J e 1-10
