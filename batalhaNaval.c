@@ -54,8 +54,12 @@ int main() {
         printf("\n");
     }
 
-
-    
+    // Legenda
+printf("\nLegenda:\n");
+printf("0 = Água\n");
+printf("3 = Navio\n");
+printf("Coordenadas: Colunas (A-J) x Linhas (1-10)\n");
+printf("\n");
 
     return 0;
 }
